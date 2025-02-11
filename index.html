@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMC官网</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const startDate1 = new Date("2024-06-28");
+            const startDate2 = new Date("2024-12-22");
+            const today = new Date();
+            
+            const timeDiff1 = today - startDate1;
+            const daysDiff1 = Math.floor(timeDiff1 / (1000 * 60 * 60 * 24));
+            document.getElementById("days-count").textContent = daysDiff1 + "天";
+            
+            const timeDiff2 = today - startDate2;
+            const daysDiff2 = Math.floor(timeDiff2 / (1000 * 60 * 60 * 24));
+            document.getElementById("server-days").textContent = daysDiff2 + "天";
+        });
+    </script>
+</head>
+<body>
+    <main>
+        <section class="first">
+            <h1>Record MC</h1>
+            <h2>专注于模组生存MC的服务器</h2>
+            <h3>科技 | 养老 | 魔法 | 农业</h3>
+            <div>
+                <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8kp_kUhNinDuuAZ7TOLrFdGrstuyoOLC&authKey=R2D13H60vi6QYM4%2BChEQj8PyVRICnaMsHNz4RfzJhFchJ%2FxVBTPesIZEJaYCWLjE&noverify=0&group_code=971715101">加入我们</a>
+                <a href="https://space.bilibili.com/3546802783520874?spm_id_from=333.337.0.0">bilibili账号</a>
+                <a href="https://www.douyin.com/user/MS4wLjABAAAAYR91Fo0kUqDuvu1BwKyM0JRwleUU1O5DNmSoKg0rZQj-54PIMytpFJYI2rA73Y8S?from_tab_name=main">抖音账号</a>
+            </div>
+        </section>
+        <section class="second">
+            <img src="imges/2025-02-03_21.04.57.png">
+            <div class="secondinfo">
+                <h1>本周目已经开始<span id="server-days">100天</span></h1>
+                <h2>我们期待与你每一天都能相见</h2>
+                <h2>服务器已经建立<span id="days-count">100天</span></h2>
+                <h2>服务器建立时间2024-6-28 ~ 结束？</h2>
+            </div>
+        </section>
+        <section class="third">
+            <div class="thirdinfo">
+                <h1>服务器包含多种模组</h1>
+                <h2>魔法、科技、农业等应有尽有<br>多种创意玩法等你来探索</h2>
+                <div>
+                    <a href="https://docs.qq.com/sheet/DVUVOUmVPcmVudGpx?tab=BB08J2">模组申请表</a>
+                    <a href="https://docs.qq.com/sheet/DVW1obW5zTGxZeEJ1?tab=BB08J2">更新日志</a>
+                </div>
+            </div>
+            <img src="imges/2025-02-03_21.11.51.png">
+        </section>
+        <section class="fourth">
+            <h1>服务器宣传视频</h1>
+            <h2>专注于模组生存的服务器</h2>
+            <div>
+                <a href="https://www.bilibili.com/video/BV1rDkqYQE5R/?spm_id_from=333.1387.homepage.video_card.click">bilibili</a>
+                <a href="https://v.douyin.com/iPSYhMLF/">抖音</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>@ by hugugiko.</p>
+        <p>由Github pages完成建站</p>
+    </footer>
+</body>
+</html>
